@@ -8,17 +8,35 @@
 
 import Foundation
 
+//protocol FakeCalcBrainProtocol {
+//    
+//    mutating func setOperand (operand:Double)
+//    mutating func performOperation (symbol:String)
+//    var result: Double {get}
+//    
+//}
+//
+//protocol CalcBrainProtocol {}
+//
+//extension CalcBrainProtocol where Self: FakeCalcBrainProtocol {
+//    
+//}
 
-struct CalcBrain {
+
+struct CalcBrain  {
     
-    private init (){
-        //CalcModel.calcModelInstance = self
+    init (){
     }
     
     //MARK: Calc Brain
     private var accumulator = 0.0
     
-    mutating func setOperand (operand:Double){
+    private func getDisplayValue(inputText: String) -> Double {
+        return Double (inputText)!
+    }
+    
+    mutating func setOperand (inputText: String){
+        let operand = getDisplayValue(inputText)
         accumulator = operand
     }
     
@@ -30,14 +48,15 @@ struct CalcBrain {
     }
     
     private var operations : Dictionary <String, Operation> = [
-        "ℏ" : Operation.Constant(M_PI),
-        "e" : Operation.Constant(M_E),
-        "cos" : Operation.UnaryOperation(sqrt),
-        "∗" : Operation.BinaryOperation({$0 * $1}),
-        "÷" : Operation.BinaryOperation({$0 / $1}),
-        "-" : Operation.BinaryOperation({$0 - $1}),
-        "+" : Operation.BinaryOperation({$0 + $1}),
-        "=" : Operation.Equals
+        "ℏ" :               Operation.Constant(M_PI), //"ℏ"
+        "e" :               Operation.Constant(M_E), //"e"
+        "operSrt" :         Operation.UnaryOperation(sqrt), //"sqrt"
+        "operMultiply" :    Operation.BinaryOperation({$0 * $1}), //"∗"
+        "operDivide" :      Operation.BinaryOperation({$0 / $1}), // "÷"
+        "operMinus" :       Operation.BinaryOperation({$0 - $1}), // "-"
+        "operPlus" :        Operation.BinaryOperation({$0 + $1}), // "+"
+        "opereEqually" :    Operation.Equals, //"="
+        "oper⊂" :           Operation.Constant(0) //"="
     ]
     
     mutating func performOperation (symbol:String){
@@ -76,6 +95,16 @@ struct CalcBrain {
         }
     }
     
+}
+
+//MARK: func. for view
+extension CalcBrain {
     
-    
+    mutating func calculateValueForView (inputText: String, symbolWhatCalculate: String) -> Double {
+       
+        setOperand (inputText)
+        performOperation(symbolWhatCalculate)
+        
+        return self.result
+    }
 }

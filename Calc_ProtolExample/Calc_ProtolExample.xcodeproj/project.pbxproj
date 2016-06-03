@@ -13,7 +13,6 @@
 		E7F634BC1D00096A00D25DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F634BB1D00096A00D25DE0 /* Main.storyboard */; };
 		E7F634BF1D000B3F00D25DE0 /* CalcMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F634BE1D000B3F00D25DE0 /* CalcMainController.swift */; };
 		E7F634C21D000CEE00D25DE0 /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F634C11D000CEE00D25DE0 /* UIView_Borders.swift */; };
-		E7F634C41D000D9800D25DE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F634C31D000D9800D25DE0 /* Info.plist */; };
 		E7F634C61D0012D700D25DE0 /* CalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F634C51D0012D700D25DE0 /* CalcBrain.swift */; };
 /* End PBXBuildFile section */
 
@@ -169,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F634C41D000D9800D25DE0 /* Info.plist in Resources */,
 				E7F634B51D00087F00D25DE0 /* Assets.xcassets in Resources */,
 				E7F634B61D00087F00D25DE0 /* LaunchScreen.storyboard in Resources */,
 				E7F634BC1D00096A00D25DE0 /* Main.storyboard in Resources */,
@@ -330,6 +328,7 @@
 				E7F634AD1D00080100D25DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
