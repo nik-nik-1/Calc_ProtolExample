@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum typeOfButtonClick {
+    case operationButton (String)
+    case numberButton (String)
+}
+
 
 //MARK: Native function of the View
 class CalcMainController: UIViewController, displayOfCalcProtocol {
@@ -20,11 +25,7 @@ class CalcMainController: UIViewController, displayOfCalcProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    enum typeOfButtonClick {
-        case operationButton (String)
-        case numberButton (String)
-    }
+
     
     var calcBrainViewModel = CalcBrain()
     
@@ -43,7 +44,9 @@ class CalcMainController: UIViewController, displayOfCalcProtocol {
 
 //MARK: Using Class for display value
 protocol displayOfCalcProtocol {
-    
+    func generateCalcDisplayText (inputDigit:typeOfButtonClick)
+    func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String
+    func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String
 }
 
 extension displayOfCalcProtocol where Self: CalcMainController {

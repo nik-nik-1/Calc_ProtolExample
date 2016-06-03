@@ -23,10 +23,20 @@ import Foundation
 //}
 
 
+private enum Operation {
+    case Constant (Double)
+    case UnaryOperation((Double) -> Double)
+    case BinaryOperation ((Double, Double) -> Double)
+    case Equals
+}
+
+private struct PendingBinaryOperationInfo {
+    var binaryFunction:(Double, Double) -> Double
+    var firstOperand: Double
+}
+
 struct CalcBrain  {
     
-    init (){
-    }
     
     //MARK: Calc Brain
     private var accumulator = 0.0
@@ -39,14 +49,7 @@ struct CalcBrain  {
         let operand = getDisplayValue(inputText)
         accumulator = operand
     }
-    
-    private enum Operation {
-        case Constant (Double)
-        case UnaryOperation((Double) -> Double)
-        case BinaryOperation ((Double, Double) -> Double)
-        case Equals
-    }
-    
+
     private var operations : Dictionary <String, Operation> = [
         "ℏ" :               Operation.Constant(M_PI), //"ℏ"
         "e" :               Operation.Constant(M_E), //"e"
@@ -83,11 +86,6 @@ struct CalcBrain  {
     }
     
     private var pending:PendingBinaryOperationInfo?
-    
-    private struct PendingBinaryOperationInfo {
-        var binaryFunction:(Double, Double) -> Double
-        var firstOperand: Double
-    }
     
     var result: Double{
         get {
