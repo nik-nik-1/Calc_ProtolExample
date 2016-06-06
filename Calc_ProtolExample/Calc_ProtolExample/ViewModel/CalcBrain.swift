@@ -9,48 +9,47 @@
 import Foundation
 
 //protocol FakeCalcBrainProtocol {
-//    
+//
 //    mutating func setOperand (operand:Double)
 //    mutating func performOperation (symbol:String)
 //    var result: Double {get}
-//    
+//
 //}
 //
 //protocol CalcBrainProtocol {}
 //
 //extension CalcBrainProtocol where Self: FakeCalcBrainProtocol {
-//    
+//
 //}
 
 
 private enum Operation {
-    case Constant (Double)
+    case Constant(Double)
     case UnaryOperation((Double) -> Double)
-    case BinaryOperation ((Double, Double) -> Double)
+    case BinaryOperation((Double, Double) -> Double)
     case Equals
 }
 
 private struct PendingBinaryOperationInfo {
-    var binaryFunction:(Double, Double) -> Double
+    var binaryFunction: (Double, Double) -> Double
     var firstOperand: Double
 }
 
-struct CalcBrain  {
+//MARK: Calc Brain
+struct CalcBrain {
     
-    
-    //MARK: Calc Brain
     private var accumulator = 0.0
     
-    private func getDisplayValue(inputText: String) -> Double {
-        return Double (inputText)!
+    private func getDisplayValue (inputText: String) -> Double {
+        return Double(inputText)!
     }
     
-    mutating func setOperand (inputText: String){
+    mutating func setOperand (inputText: String) {
         let operand = getDisplayValue(inputText)
         accumulator = operand
     }
-
-    private var operations : Dictionary <String, Operation> = [
+    
+    private var operations: Dictionary <String, Operation> = [
         "ℏ" :               Operation.Constant(M_PI), //"ℏ"
         "e" :               Operation.Constant(M_E), //"e"
         "operSrt" :         Operation.UnaryOperation(sqrt), //"sqrt"
@@ -62,12 +61,12 @@ struct CalcBrain  {
         "oper⊂" :           Operation.Constant(0) //"="
     ]
     
-    mutating func performOperation (symbol:String){
+    mutating func performOperation (symbol:String) {
         if let operation = operations [symbol] {
             switch operation {
             case .Constant(let value):
                 accumulator = value
-            case .UnaryOperation (let function):
+            case .UnaryOperation(let function):
                 accumulator = function(accumulator)
             case .BinaryOperation(let function):
                 executePendingBinaryOperation()
@@ -87,7 +86,7 @@ struct CalcBrain  {
     
     private var pending:PendingBinaryOperationInfo?
     
-    var result: Double{
+    var result: Double {
         get {
             return accumulator
         }
@@ -99,10 +98,11 @@ struct CalcBrain  {
 extension CalcBrain {
     
     mutating func calculateValueForView (inputText: String, symbolWhatCalculate: String) -> Double {
-       
-        setOperand (inputText)
+        
+        setOperand(inputText)
         performOperation(symbolWhatCalculate)
         
         return self.result
     }
+    
 }
