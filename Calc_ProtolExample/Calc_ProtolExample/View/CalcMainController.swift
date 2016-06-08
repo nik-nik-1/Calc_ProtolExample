@@ -38,7 +38,7 @@ class CalcMainController: UIViewController {
     }
     
     
-    func bindSignals() {
+    private func bindSignals() {
         numberButtonCollection.bindAllProperty(typeOfButtonClick.number)
         operationButtonCollection.bindAllProperty(typeOfButtonClick.operation)
         

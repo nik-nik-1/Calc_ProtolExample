@@ -44,7 +44,7 @@ struct CalcBrain {
         return Double(inputText)!
     }
     
-    mutating func setOperand (inputText: String) {
+    private mutating func setOperand (inputText: String) {
         let operand = getDisplayValue(inputText)
         accumulator = operand
     }
@@ -61,7 +61,7 @@ struct CalcBrain {
         "oper⊂" :           Operation.Constant(0) //"="
     ]
     
-    mutating func performOperation (symbol:String) {
+    private mutating func performOperation (symbol:String) {
         if let operation = operations [symbol] {
             switch operation {
             case .Constant(let value):

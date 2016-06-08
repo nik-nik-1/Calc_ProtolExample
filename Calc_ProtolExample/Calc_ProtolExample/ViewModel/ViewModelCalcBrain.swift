@@ -15,9 +15,8 @@ struct ViewModelCalcBrain {
     private(set) var valuesOnScoreboard = MutableProperty<String>("0")
     private(set) var lastUsedOperation = MutableProperty<String>("")
     
-    var userIsInTheMiddeOfTyping = false
-    
-    var calcBrain = CalcBrain()
+    private var userIsInTheMiddeOfTyping = false
+    private var calcBrain = CalcBrain()
     
 //        var buttonAction = Action<Bool, Void, NoError>() { value in
 //            return SignalProducer<Void, NoError> { observer, _ in
@@ -52,7 +51,6 @@ extension ViewModelCalcBrain {
         switch inputDigit {
         case .numberButton(let value):
             valuesOnScoreboard.value = generateCalcDisplayTextForNumberPressed (value)
-            
         case .operationButton(let value):
             valuesOnScoreboard.value = generateCalcDisplayTextForOperationPressed (value)
         default:
@@ -60,7 +58,7 @@ extension ViewModelCalcBrain {
         }
     }
     
-    private mutating func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String{
+    private mutating func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String {
         var scoreboardLableText:String = ""
         
         if userIsInTheMiddeOfTyping {
@@ -74,7 +72,7 @@ extension ViewModelCalcBrain {
         return scoreboardLableText
     }
     
-    private mutating func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String{
+    private mutating func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String {
         var scoreboardLableText:String = ""
         
         userIsInTheMiddeOfTyping = false
