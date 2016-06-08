@@ -20,11 +20,11 @@ enum typeOfButtonClick {
 //MARK: Native function of the View
 class CalcMainController: UIViewController {
     
-    @IBOutlet weak var scoreboardLable: UILabel!
-    @IBOutlet weak var operationButton: UIButton! //not Used yet!
-    @IBOutlet weak var numberButton: UIButton!
-    @IBOutlet var numberButtonCollection: [UIButton]!
-    @IBOutlet var operationButtonCollection: [UIButton]!
+    @IBOutlet private weak var scoreboardLable: UILabel!
+    @IBOutlet private weak var operationButton: UIButton! //not Used yet!
+    @IBOutlet private weak var numberButton: UIButton!
+    @IBOutlet private var numberButtonCollection: [UIButton]!
+    @IBOutlet private var operationButtonCollection: [UIButton]!
     
     private static var calcViewModel = ViewModelCalcBrain()
     private var calcViewModel: ViewModelCalcBrain {
