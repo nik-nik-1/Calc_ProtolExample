@@ -19,37 +19,22 @@ struct ViewModelCalcBrain {
     
     var calcBrain = CalcBrain()
     
-    //    var buttonAction = Action<Bool, Void, NoError>() { value in
-    //        return SignalProducer<Void, NoError> { observer, _ in
-    //            //dataProvider.addNewTestProduct()
-    //
-    //            observer.sendNext()
-    //            observer.sendCompleted()
-    //    }}
-    //
-    //    var cocoabuttonAction: CocoaAction!
-    //
-    //        init() {
-    //
-    //                cocoabuttonAction = CocoaAction(buttonAction)
-    //        }
+//        var buttonAction = Action<Bool, Void, NoError>() { value in
+//            return SignalProducer<Void, NoError> { observer, _ in
+//                //dataProvider.addNewTestProduct()
+//    
+//                observer.sendNext()
+//                observer.sendCompleted()
+//        }}
     
-    //    var numberButtonClickedAction: Action<Void, String, NoError>!
-    //    var cocoaNumberButtonClickedAction: CocoaAction!
+//        var cocoabuttonAction: CocoaAction!
     
-    
-    //
-    //    init() {
-    //        numberButtonClickedAction = Action(enabledIf: true) { (_: Void) in
-    //            return combineLatest(self.valuesOnScoreboard.producer)
-    //        }
-    //
-    //        numberButtonClickedAction.values.observe { (valuesOnScoreboard) in
-    //            print("\(valuesOnScoreboard)")
-    //        }
-    //    }
-    //numberButtonClickedAction =
-    //    cocoaNumberButtonClickedAction = CocoaAction(numberButtonClickedAction)
+//            init() {
+//    
+//                cocoabuttonAction = CocoaAction(buttonAction) { _ in
+//                    return true
+//                }
+//            }
     
 }
 
@@ -75,7 +60,7 @@ extension ViewModelCalcBrain {
         }
     }
     
-    mutating func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String{
+    private mutating func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String{
         var scoreboardLableText:String = ""
         
         if userIsInTheMiddeOfTyping {
@@ -89,7 +74,7 @@ extension ViewModelCalcBrain {
         return scoreboardLableText
     }
     
-    mutating func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String{
+    private mutating func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String{
         var scoreboardLableText:String = ""
         
         userIsInTheMiddeOfTyping = false
