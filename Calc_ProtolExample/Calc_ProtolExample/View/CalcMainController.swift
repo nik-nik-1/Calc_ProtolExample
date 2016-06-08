@@ -27,8 +27,8 @@ class CalcMainController: UIViewController {
     @IBOutlet var operationButtonCollection: [UIButton]!
     
     private static var calcViewModel = ViewModelCalcBrain()
-    private var calcViewModel:ViewModelCalcBrain {
-        get { return CalcMainController.calcViewModel}
+    private var calcViewModel: ViewModelCalcBrain {
+        get { return CalcMainController.calcViewModel }
     }
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class CalcMainController: UIViewController {
         operationButtonCollection.bindAllProperty(typeOfButtonClick.operation)
         
         scoreboardLable.rac_text <~ calcViewModel.valuesOnScoreboard
-
+        
         
         //  operationButton.addTarget(calcViewModel.cocoabuttonAction, action: CocoaAction.selector, forControlEvents: UIControlEvents.TouchUpInside)
         //
@@ -63,14 +63,16 @@ private extension Array where Element: UIButton {
     func bindAllProperty(type: typeOfButtonClick){
         for itemButton in self {
             
+            let restorationIdentifier = itemButton.restorationIdentifier!
+            
             switch type {
-            case .number: itemButton.bindProperty(typeOfButtonClick.numberButton(itemButton.restorationIdentifier!))
-                
-            case .operation: itemButton.bindProperty(typeOfButtonClick.operationButton(itemButton.restorationIdentifier!))
+            case .number:
+                itemButton.bindProperty(typeOfButtonClick.numberButton(restorationIdentifier))
+            case .operation:
+                itemButton.bindProperty(typeOfButtonClick.operationButton(restorationIdentifier))
             default:
                 print("Error to bind a key!!!")
             }
-            
         }
     }
 }
@@ -80,7 +82,7 @@ private extension UIButton {
         self.rac_signalForControlEvents(.TouchUpInside)
             .subscribeNext { value in
                 
-                print("numberButton \(value.restorationIdentifier)")
+                print("buttonIdentifier: \(inputDigit)") //value.restorationIdentifier
                 
                 CalcMainController.calcViewModel.generateCalcDisplayText (inputDigit)
         }
