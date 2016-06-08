@@ -38,7 +38,7 @@ private struct PendingBinaryOperationInfo {
 //MARK: Calc Brain
 struct CalcBrain {
     
-    private var accumulator = 0.0
+    private var accumulator:Double = 0
     
     private func getDisplayValue (inputText: String) -> Double {
         return Double(inputText)!
