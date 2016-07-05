@@ -8,21 +8,6 @@
 
 import Foundation
 
-//protocol FakeCalcBrainProtocol {
-//
-//    mutating func setOperand (operand:Double)
-//    mutating func performOperation (symbol:String)
-//    var result: Double {get}
-//
-//}
-//
-//protocol CalcBrainProtocol {}
-//
-//extension CalcBrainProtocol where Self: FakeCalcBrainProtocol {
-//
-//}
-
-
 private enum Operation {
     case Constant(Double)
     case UnaryOperation((Double) -> Double)

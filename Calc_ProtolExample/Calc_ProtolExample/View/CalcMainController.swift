@@ -44,7 +44,6 @@ class CalcMainController: UIViewController {
         
         scoreboardLable.rac_text <~ calcViewModel.valuesOnScoreboard
         
-        
         //  operationButton.addTarget(calcViewModel.cocoabuttonAction, action: CocoaAction.selector, forControlEvents: UIControlEvents.TouchUpInside)
         //
         //                calcViewModel.buttonAction.events.observeNext { event in

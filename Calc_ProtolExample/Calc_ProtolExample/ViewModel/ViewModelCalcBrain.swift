@@ -38,11 +38,6 @@ struct ViewModelCalcBrain {
 }
 
 //MARK: Using Class for display value
-//protocol displayOfCalcProtocol {
-//    func generateCalcDisplayText (inputDigit:typeOfButtonClick)
-////    func generateCalcDisplayTextForNumberPressed (inputDigit:String) -> String
-////    func generateCalcDisplayTextForOperationPressed (mathematicSymbol:String) -> String
-//}
 
 extension ViewModelCalcBrain {
     

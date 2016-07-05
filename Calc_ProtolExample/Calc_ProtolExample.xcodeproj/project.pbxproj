@@ -10,7 +10,6 @@
 		95FCAFB02F8E1EDCB82653EB /* Pods_Calc_ProtolExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EA21CA0E09BBF098A3288 /* Pods_Calc_ProtolExample.framework */; };
 		E7B632E11D05BB5300838A20 /* ViewModelCalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B632E01D05BB5300838A20 /* ViewModelCalcBrain.swift */; };
 		E7B632E51D05C1C000838A20 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E7B632E41D05C1C000838A20 /* Podfile */; };
-		E7B632E71D06EF0200838A20 /* RACUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B632E61D06EF0200838A20 /* RACUtilities.swift */; };
 		E7B632E91D08180700838A20 /* ReactiveCocoaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B632E81D08180700838A20 /* ReactiveCocoaExtensions.swift */; };
 		E7F6349D1D00080100D25DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F6349C1D00080100D25DE0 /* AppDelegate.swift */; };
 		E7F634B51D00087F00D25DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F634AF1D00087F00D25DE0 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		8B0EA21CA0E09BBF098A3288 /* Pods_Calc_ProtolExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calc_ProtolExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B632E01D05BB5300838A20 /* ViewModelCalcBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelCalcBrain.swift; sourceTree = "<group>"; };
 		E7B632E41D05C1C000838A20 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		E7B632E61D06EF0200838A20 /* RACUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACUtilities.swift; sourceTree = "<group>"; };
 		E7B632E81D08180700838A20 /* ReactiveCocoaExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtensions.swift; sourceTree = "<group>"; };
 		E7F634991D00080100D25DE0 /* Calc_ProtolExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc_ProtolExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F6349C1D00080100D25DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			children = (
 				E7B632E81D08180700838A20 /* ReactiveCocoaExtensions.swift */,
 				E7F634C11D000CEE00D25DE0 /* UIView_Borders.swift */,
-				E7B632E61D06EF0200838A20 /* RACUtilities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				E7F634C61D0012D700D25DE0 /* CalcBrain.swift in Sources */,
 				E7F634BF1D000B3F00D25DE0 /* CalcMainController.swift in Sources */,
 				E7F634C21D000CEE00D25DE0 /* UIView_Borders.swift in Sources */,
-				E7B632E71D06EF0200838A20 /* RACUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
