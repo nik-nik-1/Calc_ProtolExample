@@ -1,0 +1,6 @@
+framework module Pods_Calc_ProtolExample {
+  umbrella header "Pods-Calc_ProtolExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

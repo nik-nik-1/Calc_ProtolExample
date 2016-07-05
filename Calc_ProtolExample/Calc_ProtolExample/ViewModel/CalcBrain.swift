@@ -8,21 +8,6 @@
 
 import Foundation
 
-//protocol FakeCalcBrainProtocol {
-//
-//    mutating func setOperand (operand:Double)
-//    mutating func performOperation (symbol:String)
-//    var result: Double {get}
-//
-//}
-//
-//protocol CalcBrainProtocol {}
-//
-//extension CalcBrainProtocol where Self: FakeCalcBrainProtocol {
-//
-//}
-
-
 private enum Operation {
     case Constant(Double)
     case UnaryOperation((Double) -> Double)
@@ -38,13 +23,13 @@ private struct PendingBinaryOperationInfo {
 //MARK: Calc Brain
 struct CalcBrain {
     
-    private var accumulator = 0.0
+    private var accumulator:Double = 0
     
     private func getDisplayValue (inputText: String) -> Double {
         return Double(inputText)!
     }
     
-    mutating func setOperand (inputText: String) {
+    private mutating func setOperand (inputText: String) {
         let operand = getDisplayValue(inputText)
         accumulator = operand
     }
@@ -61,7 +46,7 @@ struct CalcBrain {
         "oper⊂" :           Operation.Constant(0) //"="
     ]
     
-    mutating func performOperation (symbol:String) {
+    private mutating func performOperation (symbol:String) {
         if let operation = operations [symbol] {
             switch operation {
             case .Constant(let value):

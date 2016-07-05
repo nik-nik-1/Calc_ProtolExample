@@ -63,9 +63,6 @@
                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARx-Bi-Zh8"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="operMinusOneSymbol" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB5-kq-OTc">
                                                         <rect key="frame" x="143" y="0.0" width="132" height="82"/>
@@ -85,9 +82,6 @@
                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QER-Cy-oyI"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="operDivide" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47o-ob-aTl">
                                                         <rect key="frame" x="285" y="0.0" width="133" height="82"/>
@@ -107,9 +101,6 @@
                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgk-v8-kHu"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="operMultiply" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-7y-aRq">
                                                         <rect key="frame" x="428" y="0.0" width="132" height="82"/>
@@ -129,9 +120,6 @@
                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYA-D7-2j2"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -159,9 +147,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qa9-o2-amd"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwa-7V-OpT">
                                                                 <rect key="frame" x="0.0" y="96" width="133" height="86"/>
@@ -181,9 +166,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GmP-Yn-4DV"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAn-Ty-BDG">
                                                                 <rect key="frame" x="0.0" y="192" width="133" height="85"/>
@@ -203,9 +185,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiA-Q3-UYS"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="operSrt" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-BQ-ftm">
                                                                 <rect key="frame" x="0.0" y="287" width="133" height="86"/>
@@ -225,9 +204,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1b-WJ-y3o"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -252,9 +228,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1J-Xp-JOm"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGo-zP-PgA">
                                                                 <rect key="frame" x="0.0" y="96" width="132" height="86"/>
@@ -274,9 +247,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bt-Rn-466"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhy-XE-5LG">
                                                                 <rect key="frame" x="0.0" y="192" width="132" height="85"/>
@@ -296,9 +266,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AyV-GZ-QDT"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DL-mq-EDv">
                                                                 <rect key="frame" x="0.0" y="287" width="132" height="86"/>
@@ -318,9 +285,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ptn-tr-sQB"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -345,9 +309,6 @@
                                                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QW1-jL-VW6"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04Q-7Y-Eor">
                                                                 <rect key="frame" x="0.0" y="96" width="133" height="86"/>
@@ -367,9 +328,6 @@
                                                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="av0-ub-mMZ"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XII-ER-zhj">
                                                                 <rect key="frame" x="0.0" y="192" width="133" height="85"/>
@@ -389,9 +347,6 @@
                                                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OT1-hP-gRG"/>
-                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="." contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zig-S0-zZL">
                                                                 <rect key="frame" x="0.0" y="287" width="133" height="86"/>
@@ -411,9 +366,6 @@
                                                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="numberButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsI-Di-MXb"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -441,9 +393,6 @@
                                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
-                                                                        <connections>
-                                                                            <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcj-Te-R1j"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="operPlus" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-Gz-ZS7">
                                                                         <rect key="frame" x="0.0" y="96" width="132" height="86"/>
@@ -463,9 +412,6 @@
                                                                                 <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
-                                                                        <connections>
-                                                                            <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ya1-2m-Y5l"/>
-                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -487,9 +433,6 @@
                                                                         <color key="value" red="0.27058823529411763" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="operationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdF-sf-fv3"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -513,6 +456,25 @@
                     </view>
                     <connections>
                         <outlet property="scoreboardLable" destination="CWY-Pz-qFU" id="5iA-Te-qaX"/>
+                        <outletCollection property="numberButtonCollection" destination="rwa-7V-OpT" collectionClass="NSMutableArray" id="Bba-LV-ydR"/>
+                        <outletCollection property="numberButtonCollection" destination="xDh-DF-hDE" collectionClass="NSMutableArray" id="zvH-Cw-KaK"/>
+                        <outletCollection property="numberButtonCollection" destination="DAn-Ty-BDG" collectionClass="NSMutableArray" id="xmj-oc-DUH"/>
+                        <outletCollection property="numberButtonCollection" destination="p6m-eX-EOO" collectionClass="NSMutableArray" id="ZsO-BI-V7D"/>
+                        <outletCollection property="numberButtonCollection" destination="RGo-zP-PgA" collectionClass="NSMutableArray" id="6OO-m7-L2S"/>
+                        <outletCollection property="numberButtonCollection" destination="qhy-XE-5LG" collectionClass="NSMutableArray" id="CSb-8x-ZjW"/>
+                        <outletCollection property="numberButtonCollection" destination="4DL-mq-EDv" collectionClass="NSMutableArray" id="hS6-62-TqJ"/>
+                        <outletCollection property="numberButtonCollection" destination="XPC-kQ-IjR" collectionClass="NSMutableArray" id="ek4-q8-4Xu"/>
+                        <outletCollection property="numberButtonCollection" destination="04Q-7Y-Eor" collectionClass="NSMutableArray" id="rBh-X8-aUz"/>
+                        <outletCollection property="numberButtonCollection" destination="XII-ER-zhj" collectionClass="NSMutableArray" id="nvK-iv-zso"/>
+                        <outletCollection property="numberButtonCollection" destination="zig-S0-zZL" collectionClass="NSMutableArray" id="NpM-7R-aIt"/>
+                        <outletCollection property="operationButtonCollection" destination="8Ej-BQ-ftm" collectionClass="NSMutableArray" id="Rc2-vY-MgB"/>
+                        <outletCollection property="operationButtonCollection" destination="9vF-lD-8KS" collectionClass="NSMutableArray" id="ics-ct-Ncb"/>
+                        <outletCollection property="operationButtonCollection" destination="DB5-kq-OTc" collectionClass="NSMutableArray" id="sHj-ol-Cor"/>
+                        <outletCollection property="operationButtonCollection" destination="47o-ob-aTl" collectionClass="NSMutableArray" id="wXE-w6-0WY"/>
+                        <outletCollection property="operationButtonCollection" destination="8iB-7y-aRq" collectionClass="NSMutableArray" id="mTv-e1-vWP"/>
+                        <outletCollection property="operationButtonCollection" destination="I4H-0w-Bwf" collectionClass="NSMutableArray" id="ufB-Bo-bAn"/>
+                        <outletCollection property="operationButtonCollection" destination="YpB-Gz-ZS7" collectionClass="NSMutableArray" id="2KS-dQ-eJg"/>
+                        <outletCollection property="operationButtonCollection" destination="ySr-0o-nsu" collectionClass="NSMutableArray" id="GB9-n5-9NR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
