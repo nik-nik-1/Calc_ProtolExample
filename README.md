@@ -1,6 +1,6 @@
 # Calc_ProtolExample
 
-What's so interesting
+What is interesting here?:
 
 1. MVVM
 2. Reactive Cocoa 4
