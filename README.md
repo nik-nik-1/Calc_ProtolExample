@@ -6,7 +6,7 @@ What's interesting here?:
 
 1. MVVM
 2. Reactive Cocoa 4
-3. Tested using SwiftLint
+3. Has been tested using <a href="https://github.com/realm/SwiftLint">SwiftLint</a>
 
 4. This repository is marked as the wrong language (like "Objective-C" but not a "Swift"), so I added ".gitattributes" files in my root directory and associated "*.h" & "*.m" -files (imported POD's files from RAC4)  as Swift language's file. (Some detail can see here: https://github.com/github/linguist#using-emacs-or-vim-modelines)
 
